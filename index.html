@@ -21,14 +21,19 @@
     #loader span{font-family:"Century Gothic","Jost",system-ui,sans-serif;font-size:.66rem;
       letter-spacing:.34em;padding-left:.34em;text-transform:uppercase;color:rgba(255,255,255,.62);
       animation:ldpulse 1.5s ease-in-out infinite alternate}
+    #loader{flex-direction:column;gap:22px}
+    #loader .ld-bar{display:block;width:min(320px,56vw);height:1px;background:rgba(255,255,255,.14)}
+    #loader .ld-bar b{display:block;width:0%;height:100%;background:#d6b46a;transition:width .35s ease}
+    #loader .ld-pct{font-family:"Century Gothic","Jost",system-ui,sans-serif;font-size:.6rem;
+      letter-spacing:.3em;color:rgba(214,180,106,.9)}
     @keyframes ldpulse{from{opacity:.4}to{opacity:1}}
     @media (prefers-reduced-motion: reduce){#loader span{animation:none}}
   </style>
-  <script type="module" crossorigin src="./assets/index-C25z1QQb.js"></script>
+  <script type="module" crossorigin src="./assets/index-DK5FeC8m.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-DGcHnVyq.css">
 </head>
 <body class="locked">
-  <div id="loader" role="status"><span>Loading...</span></div>
+  <div id="loader" role="status"><span>Loading...</span><i class="ld-bar"><b></b></i><span class="ld-pct">0%</span></div>
   <section id="intro"></section>
   <section id="about"></section>
   <section id="presence"></section>
