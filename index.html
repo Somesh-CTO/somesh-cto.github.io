@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex">
+  <meta name="author" content="mindstudio architecture · interiors">
+  <meta name="copyright" content="© 2016–2026 mindstudio. All rights reserved.">
+  <meta name="rights" content="All designs, drawings, renders, films and text are the intellectual property of mindstudio architecture · interiors. Private client review only.">
+  <meta property="og:site_name" content="mindstudio">
+  <meta property="og:title" content="mindstudio — private client showcase">
+  <meta property="og:description" content="© mindstudio architecture · interiors. All content is the intellectual property of mindstudio.">
+  <title>mindstudio</title>
+  <link rel="preload" href="./art/fonts/century-gothic.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    /* boot loader — inline so it paints before any bundle loads */
+    html{background:#05070a}
+    #loader{position:fixed;inset:0;z-index:900;display:flex;align-items:center;justify-content:center;
+      background:#05070a;transition:opacity .6s ease}
+    #loader.done{opacity:0;pointer-events:none}
+    #loader span{font-family:"Century Gothic","Jost",system-ui,sans-serif;font-size:.66rem;
+      letter-spacing:.34em;padding-left:.34em;text-transform:uppercase;color:rgba(255,255,255,.62);
+      animation:ldpulse 1.5s ease-in-out infinite alternate}
+    @keyframes ldpulse{from{opacity:.4}to{opacity:1}}
+    @media (prefers-reduced-motion: reduce){#loader span{animation:none}}
+  </style>
+  <script type="module" crossorigin src="./assets/index-C25z1QQb.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DGcHnVyq.css">
+</head>
+<body class="locked">
+  <div id="loader" role="status"><span>Loading...</span></div>
+  <section id="intro"></section>
+  <section id="about"></section>
+  <section id="presence"></section>
+  <section id="clients"></section>
+  <div id="app"></div>
+  <section id="di" aria-label="Design Intelligence"></section>
+  <section id="finale" aria-label="The mindstudio dragonfly"></section>
+  <section id="end"><div class="big">Let's design yours.</div>
+    <div class="ip-line">© 2016–2026 mindstudio architecture · interiors. All designs, drawings, renders, films and text on this
+      site are the intellectual property of mindstudio. Unauthorized reproduction, distribution or use is prohibited.</div>
+    <img class="end-mark" src="./art/mindstudio-logo-dark.png" alt="" aria-hidden="true"></section>
+</body>
+</html>
